@@ -97,13 +97,15 @@ function SignUp() {
                 onClick={() => setShowPassword((prevState) => !prevState)}
               />
             </div>
-            <div className="signUpBar">
-              <p className="signUpText">Sign Up</p>
-              <button className="signUpButton">
-                <ArrowRightIcon fill="#ffffff" width="34px" height="34px" />
-              </button>
+            <div className="flex-signup">
+              <div className="signUpBar">
+                <p className="signUpText">Sign Up</p>
+                <button className="signUpButton">
+                  <ArrowRightIcon fill="#ffffff" width="34px" height="34px" />
+                </button>
+              </div>
+              <OAuth />
             </div>
-            <OAuth />
             <Link to="/sign-in" className="signInLink">
               SignIn Instead
             </Link>
